@@ -1,4 +1,5 @@
-# BCI-Competition-III-Data-set-I-‹motor imagery in ECoG recordings, session-to-session transfer›
+# BCI-Competition-III-Data-set-I
+‹motor imagery in ECoG recordings, session-to-session transfer›
 
 ## Project Presentation
 
@@ -16,3 +17,15 @@ Please try to correctly classify the test data set. Provide a list of the labels
 
 ### Performance criterion
 How many of the labels you provided match the true labels of the test set?
+
+## Solution
+
+### Data pre-processing
+#### EEGlab
+* low-pass filtering 0 ~50 Hz
+* Downsampling 1000→100
+* select 8 channels [29 : 32, 37 : 40]
+* ICA components
+### Method
+* SVM 
+* python
